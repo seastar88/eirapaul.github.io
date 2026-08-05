@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Colorado-based writer Eira Paul.">
+    <title>Eira Paul | Writer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-overlay"></div>
+
+    <header class="site-header">
+        <a class="logo" href="#home">Eira Paul</a>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com/eira_paul/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Instagram
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">Colorado-based writer</p>
+                <h1>Eira Paul</h1>
+                <p class="tagline">
+                    Stories inspired by high places, wide skies, and the ideas
+                    that arrive when the air gets a little thin.
+                </p>
+
+                <div class="hero-links">
+                    <a class="button button-primary" href="#about">Meet Eira</a>
+                    <a class="button button-secondary"
+                       href="https://www.instagram.com/eira_paul/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        @eira_paul
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="about">
+            <div class="content-card">
+                <p class="section-label">About</p>
+                <h2>Writer. Dreamer. Occasional victim of altitude.</h2>
+
+                <p class="lead">
+                    Eira Paul is a Colorado-based writer who sometimes lets the
+                    thin air of the Rockies go to her head.
+                </p>
+
+                <p>
+                    Her work is shaped by big skies, winding roads, and the
+                    strange stories that gather in quiet places. When she is not
+                    writing, she can usually be found chasing a view, collecting
+                    ideas, or pretending she went outside for reasons unrelated
+                    to a plot.
+                </p>
+
+                <a class="text-link"
+                   href="https://www.instagram.com/eira_paul/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Follow Eira on Instagram →
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section" id="contact">
+            <div class="content-card">
+                <p class="section-label">Contact</p>
+                <h2>Send a message</h2>
+                <p>
+                    For reader notes, professional inquiries, and other
+                    correspondence, use the form below.
+                </p>
+
+                <!--
+                    CONTACT FORM SETUP:
+                    1. Create a free form at https://formspree.io/
+                    2. Replace YOUR_FORM_ID below with the ID Formspree gives you.
+                -->
+                <form
+                    id="contact-form"
+                    class="contact-form"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New message from the Eira Paul website"
+                    >
+
+                    <button class="button button-primary" type="submit">
+                        Send Message
+                    </button>
+
+                    <p id="form-status" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> Eira Paul
+            <span aria-hidden="true">·</span>
+            <a href="https://www.instagram.com/eira_paul/"
+               target="_blank"
+               rel="noopener noreferrer">
+                @eira_paul
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
